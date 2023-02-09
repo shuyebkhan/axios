@@ -8,8 +8,8 @@ function App() {
   return (
       <>
               {/* <Getapi/> */}
-              {/* <Fetchapi/> */}
-              <Fetchdata/>
+              <Fetchapi/>
+              {/* <Fetchdata/> */}
     </>
   );
 }

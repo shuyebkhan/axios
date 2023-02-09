@@ -7,7 +7,7 @@ function Fetchdata() {
   useEffect(() => {
     axios
       .get("https://dummyjson.com/products")
-      .then((response) => setMyData(response.data.products));
+      .then((response) => setMyData(response.data.products))
   }, []);
   return (
     <>
