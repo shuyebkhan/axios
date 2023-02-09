@@ -14,7 +14,7 @@ function Fetchapi() {
     <>
       <div className="container">
         <h1>Fetch-Api</h1>
-        <table className="table" style={{width:"100%"}}>
+        <table className="table" style={{ width: "100%" }}>
           <tr>
             <th>ID</th>
             <th>USER_ID</th>
