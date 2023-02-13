@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "./Apidata";
 
-const API = "https://jsonplaceholder.typicode.com/todos";
+const API = "https://jsonplaceholder.typicode.com";
 
 function Fetchapi() {
   const [myData, setMyData] = useState([]);
@@ -15,10 +15,11 @@ function Fetchapi() {
   //      .catch((error)=> setIserror(error.message));
   // }, []);
 
+  
   // NOTE: Using Async Await
-  const getApiData = async (url) => {
+  const getApiData = async () => {
     try {
-      const response = await axios.get(url);
+      const response = await axios.get("/posts");
       setMyData(response.data);
     } catch (error) {
       setIserror(error.message);
@@ -26,7 +27,7 @@ function Fetchapi() {
   };
 
   useEffect(() => {
-    getApiData(`${API}`);
+    getApiData();
   }, []);
   return (
     <>
